@@ -7,7 +7,7 @@ package frc.robot;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import com.revrobotics.CANSparkMax;
-//import com.revrobotics.RelativeEncoder;
+import com.revrobotics.RelativeEncoder;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Joystick;
@@ -42,7 +42,7 @@ Compressor compressor = new Compressor(PneumaticsModuleType.CTREPCM);
 Solenoid solenoid_forward = new Solenoid(PneumaticsModuleType.CTREPCM, 7);
 Solenoid solenoid_back = new Solenoid(PneumaticsModuleType.CTREPCM, 4);
 
-//RelativeEncoder relativeEncoder = shooterSparkMax.getEncoder();
+RelativeEncoder relativeEncoder = shooterSparkMax.getEncoder();
 
 
 DifferentialDrive drive = new DifferentialDrive(leftMotorControllerGroup, rightMotorControllerGroup);
